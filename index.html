@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="game.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+  <div class="trio" id="trioPic">
+    <div class="logo_rock">
+      <img src="pictures/rock.png" width="120px" id="left_hand"/>
+    </div>
+    <div class="logo_scissors">
+      <img src="pictures/rock.png" width="120px" id="right_hand"/>
+    </div>
+  </div>
+  <div class="logo" id="logo">
+      <h3>ROCK PAPER SCISSORS</h3>
+    </div>
+
+  <div class="menu" id="menu">
+    <div class="start_btn">
+      <button onclick="start()">START</button>
+    </div>
+    <div class="history_btn">
+      <button>HISTORY</button>
+    </div>
+    <div class="skin_btn">
+      <button>SKIN</button>
+    </div>
+  </div>
+
+<div class="back_button" id="backButton">
+  <button onclick="backStart()"><i class="fas fa-arrow-left fa-lg" id="arrow"></i> BACK</button>
+</div>
+  <div class="start_menu" id="start_menu">
+    <div class="computer">
+      <button id="computer">COMPUTER VS</button>
+    </div>
+    <div class="2player">
+     <button>2PLAYER</button> 
+    </div>
+    <div class="online">
+      <button>ONLINE</button>
+    </div>
+  </div>
+
+
+
+<div class="goBack" id="goBack">
+  <button><i class="fas fa-arrow-left fa-lg"></i> BACK</button>
+</div>
+
+
+  <div class="computer_play" id="computerPlay">
+    <div class="name_upper">
+      <h3 style="margin-left: 10px; margin-top: 70px;">COMPUTER</h3><h3 style="font-size:20px;
+      margin-top: 100px;
+      margin-left: 20px;">v/s</h3 ><h3 style="margin-left: 40px;
+      margin-top: 70px;">PLAYER</h3>
+    </div>
+    <div class="computer_hand">
+      <img src="pictures/rock.png" width="175px" id="AIhand"/>
+    </div>
+    <div class="player_hand">
+      <img src="pictures/rock.png" width="175px" id="PlayerHand"/>
+    </div>
+  </div>
+  <div class="footer" id="footer">
+      <h3 id="message">PLAYER WIN</h3>
+      <button id="playagain">Play Again</button>
+    </div>
+  
+  
+  
+  <div id="scoring">
+  <div class="scoring">
+    <div class="WIN">
+      <h3>WIN: <label id="win"></label></h3>
+    </div>
+    <div class="TIE">
+      <h3>TIE: <label id="tie"></label></h3>
+    </div>
+    <div class="LOST">
+      <h3>LOST: <label id="lost"></label></h3>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="choices" id="choices">
+    <div class="select_text">
+     <h2>Select Your Weapon</h2> 
+    </div>
+    <div class="selection">
+      <div class="rock">
+        <button id="rock_select"><img src="pictures/rock.png" width="80px"/></button>
+      </div>
+      <div class="paper">
+        <button id="paper_select"><img src="pictures/paper.png" width="80px"/></button>
+      </div>
+      <div class="scissors">
+        <button id="scissor_select"><img src="pictures/scissors.png" width="80px"/></button>
+      </div>
+    </div>
+  </div>
+ 
+  
+</body>
+<script src="changing.js"></script>
+<<script type="module" src="gameplay.js"></script>
+</html>
